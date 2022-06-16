@@ -1,0 +1,362 @@
+/* commmon */
+body{
+    font-family: Poppins, "M PLUS 1p", "Hiragino Sans", ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, sans-serif;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+/* header */
+header {
+    background: #00ad77 !important;
+}
+header {
+    background-color: rgb(0 0 0 / 0.3);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    
+}
+.navbar-brand img {
+    width: 250px;
+    height: 80px;
+}
+.header-btn a {
+    text-decoration: none;
+    min-width: 160px;
+    height: 42px;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 50px; 
+}
+.header-box {
+    background-image:url("img/background_home.png");
+    background-position:center center ;
+    position: relative;
+    } 
+.header-box::before {
+        content: "";
+        background: rgba(0,147,67,0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+.header-main::after {
+    background-image:url("img/new_info_main.png");
+    background-size: 780px;
+    background-position: 82.5% bottom;
+    background-repeat:no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}  
+ .header-main  {
+     padding: 210px 0 50px ;
+     z-index: 2;
+     position: relative;
+    }
+
+/* main */
+.main-info {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.main-info h1 {
+    color: yellow;
+} 
+.main-info p {
+    color: white;
+}
+.main-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    width:236px;
+    height: 54px;
+    color: #00ad77;
+    text-decoration: none;
+    background: #fff;
+    font-size: 16px;
+    padding: 0 28px;
+    border-radius: 50px;
+    letter-spacing: -0.75pt;
+}
+.wrapper {
+    background: #000;
+    padding: 24px 0;
+}
+.match {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    
+}
+.match h5 {
+    font-size: 15px;
+}
+.match p {
+    color: grey;
+}
+.news h5::after {
+    content: "";
+    display: inline-block;
+    border-top: 2px solid white;
+    border-right:2px solid white;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    margin-left: 5px;
+} 
+.items {
+    max-width: 1140px;
+    margin:0 auto;    
+}
+.item {
+    padding: 35px 0 35px 0;
+}
+.item+.item:not(:first-child){
+    padding-left: 10px;
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 120px;
+    gap: 20px;
+    max-width: 1000px;
+    margin:0 auto;
+
+}
+.box {
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+}
+.box a {
+    cursor: pointer;
+}
+
+.itemA {
+    grid-row: 1/3;
+    grid-column:1/3 ;
+    background-image: url("img/guide-view-768x512.jpg");
+}
+.itemB{
+    background-image: url("img/guide-account-guide-768x512.jpg");
+   
+}
+.itemC {
+    background-image: url("img/guide-payment-guide-768x512.jpg");
+   
+}
+
+.itemD {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    background-image: url("img/guide-qpon-guide-768x512.jpg");
+}
+.itemE {
+    background-image: url("img/guide-bonus-guide-768x512.jpg");
+    
+}
+.itemF {
+    background-image: url("img/guide-license-guide-768x512.jpg");
+    
+}
+.itemG {
+    background-image: url("img/guide-vip-768x512.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+}
+.itemH {
+    background-image: url("img/guide-sportsbet-768x512.jpg");
+   
+}
+.itemI {
+    background-image: url("img/guide-live-casino-768x512.jpg");
+}
+.guide {
+    background-image: url("img/triangle_white_bg.png");
+    background-size: 720px;
+    background-position: center;
+    
+}
+.guide-ex {
+    max-width: 1200px;
+    margin:0 auto;
+    margin-bottom :30px;
+
+}
+.guide-ex h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+.guide-ex p{
+    font-size: 20px;
+}
+.guide-btn  {
+    height: 60px;
+    max-width: 320px;
+    margin:0 auto;
+    border-radius:50px ;
+    background: #26a69a;
+  
+}
+.guide-btn a {
+    color: white;
+    font-size: 18px;
+}
+.blog {
+    background-image: url("img/background_blogdiary.png");
+}
+.blog-ex h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: yellow;
+}
+.blog-ex p {
+    color: white;
+}
+.blog-btn {
+    height: 60px;
+    max-width: 320px;
+    margin:0 auto;
+    border-radius:50px ;
+    background: #fff;
+}
+.blog-btn a {
+    color: red;
+    font-size: 18px;
+
+}
+.content span {
+    color: gray;
+    font-size: 12px;
+}
+.staff {
+    background-image: url("img/games-bg.jpg");
+    background-size: cover;
+    background-position: center;
+  
+
+}
+.staff-ex {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.staff-ex h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: yellow;
+}
+.game {
+    max-height: 260px;
+    min-height: 140px;
+    margin-bottom: 15px; 
+    background-size: cover; 
+    border-radius: 2px;
+    position: relative;
+    border-left: 4px solid #43C6AC;
+    border-right: 4px solid #d9e653;    
+}
+.game::before {
+    content: "";
+    height: 4px;
+    background: linear-gradient(to right, #43C6AC 0%, #d9e653 100%);
+    display: block;
+    position: relative;
+    top:0;
+}
+.game::after {
+    content: "";
+    height: 4px;
+    background: linear-gradient(to right, #43C6AC 0%, #d9e653 100%);
+    display: block;
+    position: relative;
+    bottom: 8px;
+    z-index: 3;
+    top: inherit;
+}
+.game span {
+    bottom: 16px;
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    z-index:2;
+} 
+.wrapper3 {
+    display: grid;
+    height: auto;
+    max-width:85%;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+.game1 {
+    background-image:url("img/bg_sec_01_sp.jpg"); 
+    height: 22vw;
+}
+.game2 {
+    background-image:url("img/bg_sec_02_sp.jpg"); 
+    height: 22vw;
+}
+.game3 {
+    background-image:url("img/bg_sec_06_sp.jpg"); 
+    height: 22vw;
+}
+.game4 {
+    background-image:url("img/bg_sec_03_sp.jpg"); 
+    height: 22vw;
+}
+.game5 {
+    background-image:url("img/bg_sec_04_sp.jpg"); 
+    height: 22vw;
+}
+.game6 {
+    background-image:url("img/bg_sec_05_sp.jpg");
+    height: 22vw; 
+}
+
+
+
+/* media */
+@media (min-width:960px){
+    .header-logo {
+        margin-left: 30px;
+    }
+    .header-btn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+}
+@media (max-width:960px) {
+    .header-btn  a{
+        display: none;
+    }
+    .box {
+        margin-top: 30px;
+    }
+
+}
